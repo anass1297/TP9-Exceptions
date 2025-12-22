@@ -1,0 +1,25 @@
+[2025-12-23T00:09:54.214909200] Erreur validation utilisateur
+com.example.tp.InvalidUserException: Nom invalide
+	at com.example.tp.User.validate(User.java:14)
+	at com.example.tp.MainUser.main(MainUser.java:13)
+----------------------------------
+[2025-12-23T00:09:54.220125800] Erreur validation utilisateur
+com.example.tp.InvalidUserException: Utilisateur mineur : 16
+	at com.example.tp.User.validate(User.java:17)
+	at com.example.tp.MainUser.main(MainUser.java:13)
+----------------------------------
+[2025-12-23T00:10:09.299935700] Erreur calculatrice
+java.lang.ArithmeticException: Division par zéro impossible
+	at com.example.tp.Calculator.div(Calculator.java:19)
+	at com.example.tp.MainCalc.main(MainCalc.java:9)
+----------------------------------
+[2025-12-23T00:10:37.578033] Erreur lecture fichier
+java.io.FileNotFoundException: numbers.txt (Le fichier spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at com.example.tp.FileUtil.readNumbers(FileUtil.java:11)
+	at com.example.tp.MainFile.main(MainFile.java:7)
+----------------------------------

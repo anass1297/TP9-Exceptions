@@ -1,0 +1,25 @@
+package com.example.tp;
+
+public class User {
+    private String nom;
+    private int age;
+
+    public User(String nom, int age) {
+        this.nom = nom;
+        this.age = age;
+    }
+
+    public void validate() throws InvalidUserException {
+        if (nom == null || nom.trim().isEmpty()) {
+            throw new InvalidUserException("Nom invalide");
+        }
+        if (age < 18) {
+            throw new InvalidUserException("Utilisateur mineur : " + age);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "User[nom=" + nom + ", age=" + age + "]";
+    }
+}
