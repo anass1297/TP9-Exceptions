@@ -11,10 +11,10 @@ public class User {
 
     public void validate() throws InvalidUserException {
         if (nom == null || nom.trim().isEmpty()) {
-            throw new InvalidUserException("Nom invalide");
+            throw new InvalidUserException("Nom d'utilisateur invalide");
         }
         if (age < 18) {
-            throw new InvalidUserException("Utilisateur mineur : " + age);
+            throw new InvalidUserException("Utilisateur mineur (âge=" + age + ")");
         }
     }
 
